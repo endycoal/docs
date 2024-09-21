@@ -1,33 +1,46 @@
 ---
 title: 'Introduction'
-description: 'Example section for showcasing API endpoints'
+description: 'Welcome to Jamquest API documentation v1.0'
 ---
 
 <Note>
-  If you're not looking to build API reference documentation, you can delete
-  this section by removing the api-reference folder.
+ Please take note that the sample response of this docs might be slightly different from the actual response on real-time. Make sure call the API to get the
 </Note>
 
-## Welcome
+## Quickstart
 
-There are two ways to build API documentation: [OpenAPI](https://mintlify.com/docs/api-playground/openapi/setup) and [MDX components](https://mintlify.com/docs/api-playground/mdx/configuration). For the starter kit, we are using the following OpenAPI specification.
 
-<Card
-  title="Plant Store Endpoints"
-  icon="leaf"
-  href="https://github.com/mintlify/starter/blob/main/api-reference/openapi.json"
->
-  View the OpenAPI specification file
-</Card>
+<CardGroup cols={2}>
+  <Card
+    title="Auth"
+    icon="palette"
+    href="/api-reference/authentication/register-a-new-user"
+  >
+    Create account, login, reset password and logout
+  </Card>
+  <Card
+    title="Fetch User Data"
+    icon="code"
+    href="/api-reference/user/get-users-personal-information"
+  >
+   Retrieve user data, find DJs
+  </Card>
+  <Card
+    title="User Operations"
+    icon="screwdriver-wrench"
+    href="/api-reference/user-operations/update-user-location"
+  >
+    Perform operations for users
+  </Card>
+  <Card
+    title="Music Requests"
+    icon="stars"
+    href="/api-reference/music-requests/create-a-new-music-request"
+  >
+    Create and Retrieves details music requests
+  </Card>
+</CardGroup>
 
 ## Authentication
 
-All API endpoints are authenticated using Bearer tokens and picked up from the specification file.
-
-```json
-"security": [
-  {
-    "bearerAuth": []
-  }
-]
-```
+Prtected API endpoints are authenticated using token obtained during login or registration. Use this token in the Authorization header for authenticated requests.
