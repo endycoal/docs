@@ -1,7 +1,7 @@
 {
   "openapi": "3.0.0",
   "info": {
-    "title": "DJ Music Request API",
+    "title": "Jamquest API",
     "version": "1.0.0",
     "description": "API for managing DJ music requests, user accounts, and wallet operations."
   },
